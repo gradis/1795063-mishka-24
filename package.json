@@ -4,7 +4,7 @@
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
-    "stylelint": "13.13.1",
+    "stylelint": "^13.13.1",
     "stylelint-config-htmlacademy": "^0.1.11"
   },
   "scripts": {
@@ -19,5 +19,8 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "editorconfig": "^0.15.3"
+  }
 }
