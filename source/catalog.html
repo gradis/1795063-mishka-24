@@ -6,7 +6,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="">
+      <a class="page-header__logo" href="/index.html">
         <img src="/source/img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин милых штук ручной работы для дома «Мишка»">
       </a>
       <button class="main-nav__toggle" type="button">
@@ -15,16 +15,16 @@
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="/source/catalog.html">Каталог товаров</a>
+            <a href="/catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a href="/source/form.html">Вязание на заказ</a>
+            <a href="/form.html">Вязание на заказ</a>
           </li>
           <li class="site-list__item">
-            <a href="/source/form.html">Поиск по сайту</a>
+            <a href="">Поиск по сайту</a>
           </li>
           <li class="site-list__item">
-            <a href="/source/form.html">Корзина: <span class="bukket-value">пока пуста</span></a>
+            <a href="#">Корзина: <span class="bukket-value">пока пуста</span></a>
           </li>
         </ul>
       </nav>
@@ -42,7 +42,7 @@
         <h2 class="visually-hidden">Товары</h2>
         <ul class="catalog_lsit goods-list">
           <li class="goods-list__item product">
-            <img class="product__img" src="/source/img/catalog/photo-1-mobile 1.jpg" alt="игрушка «Зайчик-попрыгайчик»">
+            <img class="product__img" src="/source/img/catalog/photo-1-mobile.jpg" width="260" height="150" alt="игрушка «Зайчик-попрыгайчик»">
             <p class="product__name">Зайчик-попрыгайчик</p>
             <p class="product__short-description">Рост 30 см, вес 200 г</p>
             <div>
@@ -55,7 +55,7 @@
             </div>
           </li>
           <li class="goods-list__item product">
-            <img class="product__img" src="/source/img/catalog/photo-2-mobile 1.jpg" alt="аксессуар «Корзинка для белья»">
+            <img class="product__img" src="/source/img/catalog/photo-2-mobile.jpg" width="260" height="150" alt="аксессуар «Корзинка для белья»">
             <p class="product__name">Корзинка для белья</p>
             <p class="product__short-description">Диаметр 15 см, высота 10 см</p>
             <div>
@@ -68,7 +68,7 @@
             </div>
           </li>
           <li class="goods-list__item product">
-            <img class="product__img" src="/source/img/catalog/photo-3-mobile 1.jpg" alt="аксессуар «Большая корзинкадля игрушек»">
+            <img class="product__img" src="/source/img/catalog/photo-3-mobile.jpg" width="260" height="150" alt="аксессуар «Большая корзинкадля игрушек»">
             <p class="product__name">Большая корзинкадля игрушек</p>
             <p class="product__short-description">Диаметр 30 см, высота 30 см</p>
             <div>
@@ -82,13 +82,14 @@
       </section>
 
       <section class="process-info">
-        <img class="process-info__video-img" src="/source/img/catalog/video-cover.jpg" alt="Видео процесса изготовления">
-        <a href="#" class="process-info__link">
-          <button class="button__black">Просмотр</button>
-        </a>
+        <h2 class="visually-hidden">Процесс изготовления</h2>
+        <img class="process-info__video-img" src="/source/img/catalog/video-cover.jpg" width="260" height="150" alt="Видео процесса изготовления">
+        <button class="process-info__button button__black">Просмотр</button>
+        <p class="process-info__description">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        </p>
+        <a href="/form.html" class="button button__black">Сделать заказ</a>
       </section>
-
-
     </main>
 
     <footer class="page-footer">
@@ -108,7 +109,9 @@
       </ul>
       <div class="html-academy-wrapper">
         <p>Разработано</p>
-        <img src="/source/img/htmlacademy.svg" width="29" height="63" alt="HTML Academy">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="html-academy-wrapper__link">
+          <img src="/source/img/htmlacademy.svg" width="29" height="63" alt="HTML Academy">
+        </a>
       </div>
     </footer>
   </body>

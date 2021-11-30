@@ -6,7 +6,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="">
+      <a class="page-header__logo" href="/index.html">
         <img src="/source/img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин милых штук ручной работы для дома «Мишка»">
       </a>
       <button class="main-nav__toggle" type="button">
@@ -40,33 +40,45 @@
 
       <section class="form">
         <h2 class="visually-hidden">Оформление заказа</h2>
+        <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="order-form__type-of-order">
             <legend>Тип</legend>
-            <input type="radio" name="type-of-good" id="type-of-goods-1" checked>Аксессура для интерьера
-            <input type="radio" name="type-of-good" id="type-of-goods-2">Детская игрушка
+            <input type="radio" name="type-of-good" id="type-of-goods-1" checked>
+            <label for="type-of-goods-1">Аксессура для интерьера</label>
+            <input type="radio" name="type-of-good" id="type-of-goods-2">
+            <label for="type-of-goods-2">Детская игрушка</label>
           </fieldset>
 
           <fieldset class="order-form__color">
             <legend>Цвет</legend>
-            <input type="checkbox" name="color-of-good" id="color-white" checked>Белый
-            <input type="checkbox" name="color-of-good" id="color-gray" checked>Серый
-            <input type="checkbox" name="color-of-good" id="color-tiffany">"Тиффани"
-            <input type="checkbox" name="color-of-good" id="color-black">Черный
-            <input type="checkbox" name="color-of-good" id="color-pink">Розовый
-            <input type="checkbox" name="color-of-good" id="color-orange">Оранжевый
+            <input type="checkbox" name="color-of-good" id="color-white" checked>
+            <label for="color-white">Белый</label>
+            <input type="checkbox" name="color-of-good" id="color-gray" checked>
+            <label for="color-gray">Серый</label>
+            <input type="checkbox" name="color-of-good" id="color-tiffany">
+            <label for="color-tiffany">"Тиффани"</label>
+            <input type="checkbox" name="color-of-good" id="color-black">
+            <label for="color-black">Черный</label>
+            <input type="checkbox" name="color-of-good" id="color-pink">
+            <label for="tcolor-pink">Розовый</label>
+            <input type="checkbox" name="color-of-good" id="color-orange">
+            <label for="type-of-goods-2">color-orange</label>
           </fieldset>
 
           <fieldset class="order-form__full-name">
             <legend>ФИО</legend>
+            <label for="firstName">Имя:</label>
             <input type="text" id="firstName" placeholder="Введите ваше имя*" required>
+            <label for="secondName">Имя:</label>
             <input type="text" id="secondName" placeholder="Укажите фамилию*" required>
+            <label for="middleName">Имя:</label>
             <input type="text" id="middleName" placeholder="Отчество, если желаете">
           </fieldset>
 
           <fieldset class="order-form__number">
             <legend>Тел</legend>
-            <input type="text" id="phone-number" placeholder="+7 xxx xxx xx xx">
+            <input type="tel" id="phone-number" placeholder="+7 xxx xxx xx xx">
           </fieldset>
 
           <fieldset class="email">
