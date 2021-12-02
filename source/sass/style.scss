@@ -1,1 +1,26 @@
-// Начните писать стили здесь
+// Global
+@import "global/font.scss";
+@import "global/variables.scss";
+@import "global/buttons.scss";
+@import "global/additional.scss";
+@import "global/visually-hidden.scss";
+
+// Blocks
+
+@import "blocks/page.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/banner.scss";
+@import "blocks/featured-item.scss";
+@import "blocks/about.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+@import "blocks/modal.scss";
+@import "blocks/form.scss";
+@import "blocks/catalog.scss";
+@import "blocks/process-info.scss";
+
+a {
+  text-decoration: none;
+  color: $black;
+}
