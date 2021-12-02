@@ -1,0 +1,50 @@
+.button__black {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $white;
+  color: $dark-gray;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 260px;
+  height: 52px;
+  border: 2px solid $dark-gray;
+}
+
+.button__black:hover {
+  background-color: $dark-gray;
+  color: $white;
+}
+
+.button__black:active {
+  background-color: $dark-gray;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.arrow-button {
+  // border: none;
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+  content: "";
+  width: 130px;
+  height: 60px;
+}
+
+.button__green {
+  width: 260px;
+  height: 52px;
+
+  color: $white;
+  text-transform: uppercase;
+  border: none;
+  background-color: $main-color;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+

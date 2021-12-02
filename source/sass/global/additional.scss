@@ -1,0 +1,18 @@
+.section-name {
+  color: $black;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.style-list-none {
+  list-style: none;
+  padding: 0;
+}
+
+.text-input {
+  border: none;
+  background: $white;
+  mix-blend-mode: normal;
+  box-shadow: inset 0px -2px 0px $black;
+}
