@@ -15,10 +15,17 @@
   mix-blend-mode: normal;
   border: 2px solid $dark-gray;
   box-sizing: border-box;
+
+  &::placeholder {
+    font-family: "Open Sans", "Courier", monospace;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 18px;
+    opacity: 0.3;
+  }
 }
 
-.info-text {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
+.fieldset__number input::placeholder {
+  text-transform: uppercase;
+  font-family: "Open Sans", "Courier", monospace;
 }

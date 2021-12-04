@@ -1,10 +1,16 @@
 .banner {
   &__text {
-    margin: 0 30px 0 30px;
+    padding: 0 30px 0 30px;
     font-weight: bold;
     font-size: 27px;
     line-height: 30px;
     text-align: center;
+    background-color: $footer-color;
+  }
+
+  &__text--special {
+    background-image: url('../../img/banner-imgs/bg.jpg');
+    background-repeat: no-repeat;
   }
 
   &__list {
