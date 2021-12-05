@@ -1,0 +1,53 @@
+.banner {
+  &__text {
+    padding: 0 30px 0 30px;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 30px;
+    text-align: center;
+    background-color: $footer-color;
+  }
+
+  &__text--special {
+    background-image: url("../../img/banner-imgs/bg.jpg");
+    background-repeat: no-repeat;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+.goods-types-list__item {
+  & a {
+    display: block;
+    box-sizing: border-box;
+    padding-top: 24px;
+    padding-bottom: 18px;
+    color: $white;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+  }
+
+  &:last-child div {
+    padding-right: 27px;
+  }
+
+  & div {
+    padding-left: 30px;
+    padding-right: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &:first-child {
+    background-color: $main-color;
+  }
+
+  &:last-child {
+    background-color: $main-dark;
+  }
+}

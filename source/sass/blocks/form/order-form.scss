@@ -1,0 +1,31 @@
+.order-form__fieldset {
+  border: none;
+  border-top: 1px solid $main-color;
+  padding: 0;
+
+  & legend {
+    padding-right: 23px;
+  }
+}
+
+.fieldset__comment textarea {
+  width: 260px;
+  height: 142px;
+  background: $white;
+  mix-blend-mode: normal;
+  border: 2px solid $dark-gray;
+  box-sizing: border-box;
+
+  &::placeholder {
+    font-family: "Open Sans", "Courier", monospace;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 18px;
+    opacity: 0.3;
+  }
+}
+
+.fieldset__number input::placeholder {
+  text-transform: uppercase;
+  font-family: "Open Sans", "Courier", monospace;
+}

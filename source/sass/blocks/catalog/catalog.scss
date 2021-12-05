@@ -1,0 +1,28 @@
+.catalog {
+  margin: 0 30px 0 30px;
+}
+
+.product {
+  &__name {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  &__short-description {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 30px;
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  & div {
+    display: flex;
+    align-items: center;
+  }
+}

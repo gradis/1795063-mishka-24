@@ -1,0 +1,16 @@
+.page-footer {
+  background-color: $footer-color;
+
+  &__network-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__html-academy-wrapper {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 18px;
+  }
+}

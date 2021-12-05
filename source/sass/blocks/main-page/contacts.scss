@@ -1,0 +1,33 @@
+.contacts {
+  font-size: 14px;
+  line-height: 30px;
+
+
+  &-block {
+    display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+  }
+
+  :not(img) {
+    margin: 0 30px 0 30px;
+  }
+
+  &-block p {
+    margin: 0;
+  }
+}
+
+.email-block {
+  &__link a {
+    border-bottom: 1px solid $main-color;
+  }
+
+  &__link a:hover {
+    color: $main-color;
+  }
+
+  &__link a:active {
+    border-bottom: 1px solid rgba(70, 193, 174, 0.1);
+  }
+}

@@ -1,0 +1,26 @@
+.reviews {
+  margin: 0 30px 0 30px;
+}
+
+.review {
+  &__text {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: normal;
+  }
+}
+
+.user-info {
+  font-size: 17px;
+
+  &__name {
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  &__username {
+    line-height: 30px;
+    margin-top: 0;
+  }
+}
