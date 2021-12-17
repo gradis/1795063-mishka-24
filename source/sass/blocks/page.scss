@@ -10,13 +10,11 @@
     width: 1150px;
   }
 
-  &-main section:not(.banner){
+  &-main section:not(.banner) {
     @media (min-width: $desktop-width) {
       margin: 0 50px;
     }
   }
-
-
 
   &__body {
     padding: 0;

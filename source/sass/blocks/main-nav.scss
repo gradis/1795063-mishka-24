@@ -67,7 +67,7 @@
 }
 
 .main-nav__list {
-  background-color: white;
+  background-color: $white;
   font-weight: bold;
   position: absolute;
   width: 100%;
@@ -75,10 +75,7 @@
   @media (min-width: $tablet-width) {
     background-color: transparent;
     display: grid;
-    grid-template-columns: min-content 1fr min-content 1fr
-  }
-
-  @media (min-width: $desktop-width) {
+    grid-template-columns: min-content 1fr min-content 1fr;
   }
 }
 
