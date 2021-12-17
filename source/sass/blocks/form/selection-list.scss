@@ -1,0 +1,6 @@
+.selection-list {
+  &__item {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+  }
+}

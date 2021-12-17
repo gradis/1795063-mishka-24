@@ -1,16 +1,74 @@
 .page-footer {
   background-color: $footer-color;
+  position: relative;
+  height: 160px;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    height: 143px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 
   &__network-list {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      justify-content: start;
+    }
+
+    @media (min-width: $desktop-width) {
+      justify-content: center;
+    }
   }
 
-  &__html-academy-wrapper {
+  &__network-list::after {
+    content: "";
+    width: 260px;
+    height: 1px;
+    position: absolute;
+    background-color: #e5e5e5;
+    bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &__network-list li:nth-child(even) {
+    margin: 0 41px;
+  }
+
+  &__wrapper {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
     font-weight: bold;
     font-size: 19px;
     line-height: 18px;
+
+    @media (min-width: $tablet-width) {
+      justify-content: end;
+    }
   }
 }

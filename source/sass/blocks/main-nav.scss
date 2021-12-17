@@ -1,17 +1,157 @@
 .main-nav {
-  font-weight: bold;
-}
+  position: relative;
 
-.site-list {
-  &__item {
+  @media (min-width: $tablet-width) {
+    height: 88px;
+  }
+
+  &__item a:not(.main-nav__logo) {
     height: 79px;
     box-shadow: 0 1px 0 $table-color, inset 0 1px 0 $table-color;
     font-weight: bold;
     font-size: 17px;
     line-height: 24px;
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      box-shadow: none;
+      width: 100%;
+    }
+  }
+
+  &__item--mobile-none {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &__item--text-none {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &__item--tablet-none {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &__item--second-row {
+    font-size: 15px;
+    line-height: 24px;
   }
 
   &__item:last-child {
     box-shadow: none;
+  }
+
+  &__img-wrapper {
+    min-width: 21px;
+    padding-right: 25px;
+
+    @media (min-width: $tablet-width) {
+      min-width: min-content;
+      padding-right: 0;
+    }
+  }
+}
+
+.main-nav__list {
+  background-color: white;
+  font-weight: bold;
+  position: absolute;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: min-content 1fr min-content 1fr
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
+.main-nav__item {
+  &--logo-tablet {
+    @media (min-width: $tablet-width) {
+      max-height: max-content;
+      position: absolute;
+      left: 50px;
+      top: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 510px;
+      top: 9px;
+    }
+  }
+
+  &--search {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  &--bukkit {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+
+  &--bukkit p {
+    padding-left: 32px;
+  }
+
+  &--catalog {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+    @media (min-width: $tablet-width) {
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+  }
+
+  &--form {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    @media (min-width: $tablet-width) {
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+  }
+
+  &--sale {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  &--ad {
+    @media (min-width: $tablet-width) {
+      min-width: 254px;
+      display: block;
+      grid-column: 4/5;
+      grid-row: 2/3;
+    }
   }
 }

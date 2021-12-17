@@ -1,0 +1,46 @@
+.goods-types-list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.goods-types-list__item {
+  height: 103px;
+
+  & p {
+    margin: 0;
+    width: 30%;
+  }
+
+  & a {
+    // display: block;
+    // box-sizing: border-box;
+    width: 100%;
+    color: $white;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+  }
+
+  &:last-child div {
+    padding-right: 27px;
+  }
+
+  & div {
+    padding-top: 24px;
+    padding-left: 30px;
+    padding-right: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &:first-child {
+    background-color: $main-color;
+  }
+
+  &:last-child {
+    background-color: $main-dark;
+  }
+}
