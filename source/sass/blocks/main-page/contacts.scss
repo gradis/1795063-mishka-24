@@ -2,32 +2,130 @@
   font-size: 14px;
   line-height: 30px;
 
+  & h2 {
+    margin: 0 30px;
 
-  &-block {
-    display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
+    @media (min-width: $tablet-width) {
+      align-self: end;
+      margin: 0;
+      margin-left: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 64px;
+      margin-bottom: 10px;
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
   }
 
-  :not(img) {
-    margin: 0 30px 0 30px;
+  &__icon {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      margin-right: 50px;
+      align-self: end;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      margin-left: 63px;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      justify-self: end;
+    }
+  }
+
+  &__wrapper {
+    margin: 28px 30px 62px 30px;
+
+    @media (min-width: $tablet-width) {
+      height: min-content;
+      margin: 28px 50px 49px 50px;
+      grid-column: 1/-1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      margin-left: 64px;
+      margin-top: 24px;
+      // margin-bottom: 84px;
+      grid-template-columns: none;
+      grid-template-rows: min-content min-content;
+      row-gap: 22px;
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+  }
+
+  &-block {
+    margin: 0;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 35px;
+
+    @media (min-width: $tablet-width) {
+      grid-auto-flow: column;
+      grid-template-columns: min-content 257px;
+      column-gap: 25px;
+    }
   }
 
   &-block p {
     margin: 0;
   }
-}
 
-.email-block {
-  &__link a {
-    border-bottom: 1px solid $main-color;
+  &__map-wrapper {
+    @media (min-width: $tablet-width) {
+      grid-column: 1/-1;
+      height: 457px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 3/4;
+      grid-row: 1/4;
+    }
   }
 
-  &__link a:hover {
-    color: $main-color;
+  &__map {
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    min-height: 454px;
+    height: 100%;
   }
 
-  &__link a:active {
-    border-bottom: 1px solid rgba(70, 193, 174, 0.1);
+  &__button {
+    margin: 42px 30px 39px 30px;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 1/-1;
+      width: 230px;
+      margin: 55px auto 57px auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      margin-left: 64px;
+      align-self: end;
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: min-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 82px;
+    margin-bottom: 79px;
+    grid-template-columns: min-content 1fr 1fr;
   }
 }

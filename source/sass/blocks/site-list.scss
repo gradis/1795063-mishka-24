@@ -1,0 +1,35 @@
+// .site-list {
+//   &__item {
+//     height: 79px;
+//     box-shadow: 0 1px 0 $table-color, inset 0 1px 0 $table-color;
+//     font-weight: bold;
+//     font-size: 17px;
+//     line-height: 24px;
+//     display: flex;
+//     padding-left: 30px;
+//     align-items: center;
+//   }
+
+//   &__item--mobile-none {
+//     display: none;
+
+//     @media (min-width: $tablet-width) {
+//       display: block;
+//     }
+//   }
+
+//   &__item:last-child {
+//     box-shadow: none;
+//   }
+
+//   &__img-wrapper {
+//     min-width: 21px;
+//     padding-right: 25px;
+//   }
+// }
+
+// @media (min-width: $tablet-width) {
+//   .site-list__item {
+//     box-shadow: none;
+//   }
+// }
