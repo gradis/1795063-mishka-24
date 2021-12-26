@@ -1,6 +1,32 @@
 .selection-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__item {
     display: grid;
     grid-template-columns: min-content 1fr;
+  }
+
+  &--colors {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  &--full-name li {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    @media (min-width: $tablet-width) {
+      grid-template-rows: none;
+      grid-template-columns: min-content 1fr;
+    }
   }
 }
