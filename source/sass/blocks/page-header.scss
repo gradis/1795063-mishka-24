@@ -34,6 +34,7 @@
   }
 
   &__nav-toggle {
+    font-size: 0;
     padding: 0;
 
     @media (min-width: $tablet-width) {
@@ -45,6 +46,7 @@
 //Верстал по памяти, может быть неправильно
 
 .toggle--closed {
+  font-size: 0;
   content: "";
   position: absolute;
   width: 20px;
@@ -58,6 +60,7 @@
 }
 
 .toggle--closed::before {
+  font-size: 0;
   content: "";
   position: absolute;
   background-color: $black;

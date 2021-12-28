@@ -9,31 +9,61 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="/index.html">
-        <img src="/img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин милых штук ручной работы для дома «Мишка»">
-      </a>
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list style-list-none">
-          <li class="site-list__item">
-            <a href="/catalog.html">Каталог товаров</a>
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo" href="/index.html">
+          <img class="page-header__logo-img" src="/img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин милых штук ручной работы для дома «Мишка»">
+        </a>
+        <button class="page-header__nav-toggle toggle--closed" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <nav class="page-header__list main-nav" hidden>
+        <ul class="main-nav__list style-list-none">
+          <li class="main-nav__item main-nav__item--logo-tablet main-nav__item--mobile-none">
+            <a class="main-nav__logo" href="/index.html">
+              <img src="/img/logo/mishka-logo-tablet.svg" width="113" height="46" alt="Магазин милых штук ручной работы для дома «Мишка»">
+            </a>
           </li>
-          <li class="site-list__item">
-            <a href="/form.html">Вязание на заказ</a>
+          <li class="main-nav__item main-nav__item--catalog  site-list__item">
+            <a href="/catalog.html">
+              <div class="main-nav__img-wrapper"></div>
+              <p>Каталог товаров</p>
+            </a>
           </li>
-          <li class="site-list__item">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path opacity="0.2" d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z" fill="black"/>
-            </svg>
-            <a href="">Поиск по сайту</a>
+          <li class="main-nav__item main-nav__item--form site-list__item">
+            <a href="/form.html">
+              <div class="main-nav__img-wrapper"></div>
+              <p>Вязание на заказ</p>
+            </a>
           </li>
-          <li class="site-list__item">
-            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="black"/>
-            </svg>
-            <a href="#">Корзина: <span class="bukket-value">пока пуста</span></a>
+          <li class="main-nav__item main-nav__item--search site-list__item">
+            <a class="main-nav__item--text-none" href="#">
+              <div class="main-nav__img-wrapper">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.2" d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z" fill="black"/>
+                </svg>
+              </div>
+              <p class="main-nav__item--text-none">Поиск по сайту</p>
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--bukkit site-list__item">
+            <a href="#">
+              <div class="main-nav__img-wrapper">
+                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="black"/>
+                </svg>
+              </div>
+              <p>Корзина: <span class="bukkit-value">пока пуста</span></p>
+            </a>
+          </li>
+          <li class="site-list__item main-nav__item--new main-nav__item--mobile-none main-nav__item--tablet-none main-nav__item--second-row">
+            <a href="#">Новые поступления</a>
+          </li>
+          <li class="site-list__item main-nav__item--sale main-nav__item--mobile-none main-nav__item--tablet-none  main-nav__item--second-row">
+            <a href="#">Распродажа</a>
+          </li>
+          <li class="main-nav__item main-nav__item--ad main-nav__item--mobile-none">
+            <p class="page-header__info">Бесплатаня доставка по России</p>
           </li>
         </ul>
       </nav>
@@ -42,7 +72,7 @@
     <main class="page-main">
       <h1 class="visually-hidden">Мишка - Милые штуки ручной работы для дома</h1>
 
-      <section class="banner">
+      <section class="banner--inner">
         <h2 class="visually-hidden">Баннер</h2>
         <h3 class="banner__text">Вязание на заказ</h3>
       </section>
@@ -52,8 +82,9 @@
         <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="order-form__fieldset fieldset__type-of-order">
-            <legend>Тип</legend>
-            <ul class="selection-list style-list-none">
+            <legend class="visually-hidden">Тип</legend>
+            <div class="order-form__legend">Тип</div>
+            <ul class="selection-list selection-list--type style-list-none">
               <li class="selection-list__item">
                 <input type="radio" name="type-of-good" id="type-of-goods-1" checked>
                 <label for="type-of-goods-1">Аксессура для интерьера</label>
@@ -66,7 +97,8 @@
           </fieldset>
 
           <fieldset class="order-form__fieldset fieldset__color">
-            <legend>Цвет</legend>
+            <legend class="visually-hidden">Цвет</legend>
+            <div class="order-form__legend">Цвет</div>
             <ul class="selection-list selection-list--colors style-list-none">
               <li class="selecion-list__item">
                 <input type="checkbox" name="color-of-good" id="color-white" checked>
@@ -96,34 +128,48 @@
           </fieldset>
 
           <fieldset class="order-form__fieldset fieldset__full-name">
-            <legend>ФИО</legend>
-            <div>
-              <label for="firstName">Имя:</label>
-            <input class="text-input" type="text" id="firstName" placeholder="Введите ваше имя*" required>
-            <label for="secondName">Фамилия:</label>
-            <input class="text-input" type="text" id="secondName" placeholder="Укажите фамилию*" required>
-            <label for="middleName">Отчество:</label>
-            <input class="text-input" type="text" id="middleName" placeholder="Отчество, если желаете">
-            </div>
+            <legend class="visually-hidden">ФИО</legend>
+            <div class="order-form__legend">ФИО</div>
+            <ul class="selection-list--full-name style-list-none">
+              <li class="selectioin-list__item">
+                <label for="firstName">Имя:</label>
+                <input class="text-input" type="text" id="firstName" placeholder="Введите ваше имя*" required>
+              </li>
+              <li class="selectioin-list__item">
+                <label for="secondName">Фамилия:</label>
+                <input class="text-input" type="text" id="secondName" placeholder="Укажите фамилию*" required>
+              </li>
+              <li class="selectioin-list__item">
+                <label for="middleName">Отчество:</label>
+                <input class="text-input" type="text" id="middleName" placeholder="Отчество, если желаете">
+              </li>
+            </ul>
           </fieldset>
 
-          <fieldset class="order-form__fieldset fieldset__number">
-            <legend>Тел</legend>
-            <input class="text-input" type="tel" id="phone-number" placeholder="+7 xxx xxx xx xx*">
-          </fieldset>
+          <div>
+            <fieldset class="order-form__fieldset fieldset__number">
+              <legend class="visually-hidden">Тел</legend>
+              <div class="order-form__legend">Тел</div>
+              <input class="text-input" type="tel" id="phone-number" placeholder="+7 xxx xxx xx xx*">
+            </fieldset>
 
-          <fieldset class="order-form__fieldset fieldset__email">
-            <legend>E-mail</legend>
-            <input class="text-input" type="email" id="email" placeholder="Ваш Email*" required>
-          </fieldset>
+            <fieldset class="order-form__fieldset fieldset__email">
+              <legend class="visually-hidden">E-mail</legend>
+              <div class="order-form__legend">E-mail</div>
+              <input class="text-input" type="email" id="email" placeholder="Ваш Email*" required>
+            </fieldset>
+          </div>
 
           <fieldset class="order-form__fieldset fieldset__comment">
-            <legend>Доп</legend>
+            <legend class="visually-hidden">Доп</legend>
+            <div class="order-form__legend">Доп</div>
             <textarea placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
 
-          <p class="form__info-text">*Поля обязательны для заполнения</p>
-          <input class="button__black" type="submit" value="Отправить заказ">
+          <div class="order-form__submit">
+            <p class="form__info-text">*Поля обязательны для заполнения</p>
+            <input class="form__submit button__black" type="submit" value="Отправить заказ">
+          </div>
         </form>
       </section>
     </main>
