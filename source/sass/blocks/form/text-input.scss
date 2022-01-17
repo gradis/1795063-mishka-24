@@ -1,0 +1,72 @@
+.text-input {
+  font-family: "Open Sans", "Courier", monospace;
+  font-size: 17px;
+  line-height: 18px;
+  border: none;
+  background: $white;
+  mix-blend-mode: normal;
+  box-shadow: inset 0 -2px 0 $black;
+
+  &:hover {
+    box-shadow: inset 0 -2px 0 $main-color;
+  }
+
+  &:active {
+    box-shadow: inset 0 -2px 0 $main-color;
+    outline: none;
+  }
+
+  &:focus {
+    box-shadow: inset 0 -2px 0 $main-color;
+    outline: none;
+  }
+}
+
+.text-input--size {
+  width: 100%;
+  height: 50px;
+}
+
+.text-input--margin {
+  margin: 5px 0 35px 0;
+}
+
+.text-input--phone {
+  position: absolute;
+  bottom: 48%;
+  right: 0;
+}
+
+.text-input--email {
+  position: absolute;
+  bottom: 48%;
+  right: 0;
+}
+
+.text-input + .text-input--phone path {
+  opacity: 0.2;
+}
+
+.text-input:hover + .text-input--phone path {
+  fill: $main-color;
+  opacity: 1;
+}
+
+.text-input:active + .text-input--phone path {
+  fill: $main-color;
+  opacity: 1;
+}
+
+.text-input + .text-input--email path {
+  opacity: 0.2;
+}
+
+.text-input:hover + .text-input--email path {
+  fill: $main-color;
+  opacity: 1;
+}
+
+.text-input:active + .text-input--email path {
+  fill: $main-color;
+  opacity: 1;
+}
