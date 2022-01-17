@@ -5,9 +5,11 @@
   &__logo-wrapper {
     position: relative;
     height: min-content;
+    box-shadow: 0 1px 0 $table-color, inset 0 1px 0 $table-color;
 
     @media (min-width: $tablet-width) {
       display: none;
+      box-shadow: none;
     }
   }
 
@@ -47,49 +49,40 @@
 
 .toggle--closed {
   font-size: 0;
-  content: "";
   position: absolute;
-  width: 20px;
-  height: 14px;
-  top: 32px;
-  right: 30px;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 72px;
+  height: 79px;
   background-color: transparent;
   border: 0;
-  border-top: 2px $black solid;
-  border-bottom: 2px $black solid;
+  cursor: pointer;
+  padding: 0 31px;
 }
 
 .toggle--closed::before {
-  font-size: 0;
   content: "";
   position: absolute;
-  background-color: $black;
-  height: 2px;
+  top: 32px;
+  right: calc(50% - 10px);
   width: 20px;
-  top: 4px;
-  left: 0;
+  height: 2px;
+  background-color: $black;
+  box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
 }
 
-// .toggle--opened {
-//   display: none;
-//   content: "";
-//   position: absolute;
-// }
-
-// .toggle--opened::before {
-//   color: $black;
-//   content: "";
-//   width
-// }
-
-// @media (min-width: $tablet-width) {
-//   .page-header__info {
-//     display: block;
-//     order: 4;
-//   }
-
-//   .page-header__list ul {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//   }
-// }
+.toggle--opened {
+  background-image: url("../../img/menu/menu-close.svg");
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 72px;
+  height: 79px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}

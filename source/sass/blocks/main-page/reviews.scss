@@ -2,6 +2,24 @@
   margin: 58px 30px 0 30px;
   position: relative;
 
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 100%;
+      background-size: auto 17px;
+      height: 17px;
+      background-image: url("../../img/shapes/zigzag-line.svg");
+      bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 23px;
+      background-size: auto 23px;
+      bottom: -11px;
+    }
+  }
+
   &__text {
     font-size: 15px;
     line-height: 30px;
@@ -15,16 +33,23 @@
       font-size: 17px;
       margin-bottom: 0 0 61px 0;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 68px;
+    }
   }
 
   &__arrow-buttons {
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
+    width: 260px;
+    margin: 30px auto 0 auto;
 
     @media (min-width: $tablet-width) {
       margin: 61px 0 0 0;
       justify-self: end;
+      justify-content: flex-end;
+      align-items: center;
     }
 
     @media (min-width: $desktop-width) {
@@ -33,7 +58,10 @@
   }
 
   &__button {
+    margin-top: 38px;
+
     @media (min-width: $tablet-width) {
+      margin-top: 0;
       justify-self: end;
       width: 171px;
       grid-column: 2/3;
@@ -59,8 +87,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0 50px 77px 50px;
-    padding: 95px 0 47px 0;
+    margin: 0;
+    padding: 95px 50px 115px 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -68,7 +96,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 175px;
     padding-top: 78px;
-    padding-bottom: 175px;
+    padding-bottom: 174px;
     margin: 0;
     margin-top: 22px;
   }

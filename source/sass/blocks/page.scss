@@ -5,20 +5,16 @@
   line-height: 24px;
   font-style: normal;
   margin: 0 auto;
+  min-width: 320px;
 
   @media (min-width: $desktop-width) {
     width: 1150px;
   }
 
-  &-main section:not(.banner) {
-    @media (min-width: $desktop-width) {
-      margin: 0 50px;
-    }
-  }
-
   &__body {
     padding: 0;
     margin: 0;
+    position: relative;
   }
 }
 
