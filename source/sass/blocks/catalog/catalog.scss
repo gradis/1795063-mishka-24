@@ -1,46 +1,86 @@
 .catalog {
   margin: 30px 30px 0 30px;
 
-  &__list {
-    @media (min-width: $desktop-width) {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
-
   @media (min-width: $tablet-width) {
-    margin: 0 50px;
+    margin: 79px 50px 0 50px;
+  }
+}
+
+.catalog__list {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 51px;
   }
 }
 
 .product {
-  &__name {
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 24px;
+  border: 1px solid $table-color;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  & picture {
+    display: flex;
+    justify-content: center;
 
     @media (min-width: $tablet-width) {
-      grid-column: 2/3;
-      grid-row: 1/2;
+      width: 334px;
+      height: 334px;
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 316px;
+      height: 462px;
     }
   }
 
   &__img {
+    width: 260px;
+    height: 195px;
+
     @media (min-width: $tablet-width) {
+      width: 334px;
+      height: 334px;
       grid-column: 1/2;
-      grid-row: 1/4;
+      grid-row: 1/2;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 316px;
+      height: auto;
+    }
+  }
+
+  &__wrapper {
+    margin-top: 27px;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    & div {
+      min-height: 98px;
+    }
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    margin: 0 28px;
   }
 
   &__short-description {
     font-weight: normal;
     font-size: 13px;
     line-height: 30px;
-
-    @media (min-width: $tablet-width) {
-      grid-column: 2/3;
-      grid-row: 2/3;
-    }
+    margin: 0 28px;
   }
 
   &__price {
@@ -49,14 +89,16 @@
     line-height: 24px;
   }
 
-  & div {
+  &__price-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 73px;
+    margin: 18px 28px 0 28px;
+    border-top: 1px solid $table-color;
 
     @media (min-width: $tablet-width) {
-      grid-column: 2/3;
-      grid-row: 3/4;
+      margin: 0 28px;
     }
   }
 

@@ -1,0 +1,152 @@
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid $dark-gray;
+  top: 0;
+  left: -60px;
+  width: 38px;
+  height: 38px;
+}
+
+.filter-input-radio:hover + label::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid $main-color;
+  top: 0;
+  left: -60px;
+  width: 38px;
+  height: 38px;
+}
+
+.filter-input-radio:active + label::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid $dark-gray;
+  opacity: 0.2;
+  top: 0;
+  left: -60px;
+  width: 38px;
+  height: 38px;
+}
+
+.filter-input-radio:checked + label::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid $dark-gray;
+  top: 0;
+  left: -60px;
+  width: 38px;
+  height: 38px;
+}
+
+.filter-input-radio:checked:hover + label::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid $main-color;
+  top: 0;
+  left: -60px;
+  width: 38px;
+  height: 38px;
+}
+
+.filter-input-radio:checked:active + label::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid $dark-gray;
+  opacity: 0.2;
+  top: 0;
+  left: -60px;
+  width: 38px;
+  height: 38px;
+}
+
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: $main-color;
+  top: 12px;
+  left: -48px;
+  width: 18px;
+  height: 18px;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  border: 2px solid $dark-gray;
+  position: absolute;
+  left: -60px;
+}
+
+.filter-input-checkbox:hover + label::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  border: 2px solid $main-color;
+  position: absolute;
+  left: -60px;
+}
+
+.filter-input-checkbox:active + label::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  border: 2px solid $dark-gray;
+  position: absolute;
+  opacity: 0.2;
+  left: -60px;
+}
+
+
+.filter-input-checkbox:checked + label::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  border: 2px solid $dark-gray;
+  position: absolute;
+  left: -60px;
+}
+
+.filter-input-checkbox:checked:hover + label::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  border: 2px solid $main-color;
+  position: absolute;
+  left: -60px;
+}
+
+.filter-input-checkbox:checked:active + label::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  border: 2px solid $dark-gray;
+  opacity: 0.2;
+  position: absolute;
+  left: -60px;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  width: 23px;
+  height: 16px;
+  background-image: url("../../../img/form/Checkbox/Tick.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -53px;
+}

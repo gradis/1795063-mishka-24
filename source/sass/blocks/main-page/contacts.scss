@@ -117,6 +117,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 46px;
     font-size: 17px;
     display: grid;
     grid-template-columns: 1fr min-content;
