@@ -1,4 +1,4 @@
-.banner  {
+.banner {
   background-color: $bg-color;
   position: relative;
 
@@ -20,6 +20,7 @@
       bottom: -18px;
     }
   }
+
   &--inner {
     background-color: $footer-color;
     height: 177px;

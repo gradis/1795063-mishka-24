@@ -3,19 +3,6 @@
     padding-bottom: 101px;
   }
 
-  // &-block {
-  //   margin: 0;
-  //   display: grid;
-  //   grid-template-columns: min-content 1fr;
-  //   column-gap: 35px;
-
-  //   @media (min-width: $tablet-width) {
-  //     grid-auto-flow: column;
-  //     grid-template-columns: min-content 257px;
-  //     column-gap: 25px;
-  //   }
-  // }
-
   &-block p {
     margin: 0;
   }
@@ -108,7 +95,7 @@
 
 .adress-block__name {
   @media (max-width: $tablet-width) {
-      padding-left: 30px;
+    padding-left: 30px;
   }
 }
 
@@ -159,6 +146,7 @@
     width: 230px;
     margin: 55px auto 57px auto;
   }
+
   @media (min-width: $desktop-width) {
     margin: 0;
     align-self: end;
