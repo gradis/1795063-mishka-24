@@ -1,5 +1,8 @@
 .page-footer {
   background-color: $footer-color;
+}
+
+.page-footer__container {
   position: relative;
   height: 160px;
 
@@ -15,73 +18,78 @@
     align-items: center;
   }
 
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: 1150px;
+    box-sizing: border-box;
+  }
+}
 
-  &__list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.page-footer__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+  }
+
+  @media (min-width: $desktop-width) {
     justify-content: center;
-    position: relative;
-
-    @media (min-width: $tablet-width) {
-      justify-content: start;
-    }
-
-    @media (min-width: $desktop-width) {
-      justify-content: center;
-    }
   }
+}
 
-  &__list::after {
-    content: "";
-    width: 260px;
-    height: 1px;
-    position: absolute;
-    background-color: #e5e5e5;
-    bottom: 0;
+.page-footer__list::after {
+  content: "";
+  width: 260px;
+  height: 1px;
+  position: absolute;
+  background-color: #e5e5e5;
+  bottom: 0;
 
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-
-  &__logo-link--mobile-hidden {
-    @media (max-width: $tablet-width) {
-      display: none;
-    }
-  }
-
-  &__logo {
+  @media (min-width: $tablet-width) {
     display: none;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
   }
+}
 
-  &__list li:nth-child(even) {
-    margin: 0 41px;
+.page-footer__logo-link--mobile-hidden {
+  @media (max-width: ($tablet-width - 1)) {
+    display: none;
   }
+}
 
-  &__wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.page-footer__logo {
+  display: none;
 
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 18px;
-    cursor: pointer;
-
-    @media (min-width: $tablet-width) {
-      justify-content: end;
-    }
+  @media (min-width: $tablet-width) {
+    display: block;
   }
+}
 
-  &__wrapper p {
-    margin-right: 27px;
+.page-footer__list li:nth-child(even) {
+  margin: 0 41px;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 18px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
   }
+}
+
+.page-footer__wrapper p {
+  margin-right: 27px;
 }
 
 .link-behaviour:hover path {

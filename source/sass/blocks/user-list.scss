@@ -1,15 +1,13 @@
-.user-list {
-  &__item {
-    height: 79px;
-    box-shadow: 0 1px 0 $table-color, inset 0 1px 0 $table-color;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 24px;
-  }
+.user-list__item {
+  height: 79px;
+  box-shadow: 0 1px 0 $table-color, inset 0 1px 0 $table-color;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
 
-  &__item:last-child {
-    box-shadow: none;
-  }
+.user-list__item:last-child {
+  box-shadow: none;
 }
 
 

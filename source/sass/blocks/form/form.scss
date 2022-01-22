@@ -4,43 +4,57 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+}
 
-  &__description {
-    font-size: 13px;
-    line-height: 24px;
+.form__description {
+  font-size: 13px;
+  line-height: 24px;
+  margin-top: 16px;
+  margin-bottom: 28px;
 
-    @media (min-width: $tablet-width) {
-      padding: 0 50px;
-      margin-top: 66px;
-      font-size: 17px;
-      line-height: 30px;
-    }
-  }
-
-  &__info-text {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-
-    @media (min-width: $tablet-width) {
-      font-size: 17px;
-      line-height: 30px;
-      justify-self: end;
-    }
-  }
-
-  & input::placeholder {
-    font-family: "Open Sans", "Courier", monospace;
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    margin-top: 59px;
     font-size: 17px;
-    line-height: 18px;
-    opacity: 0.3;
+    line-height: 30px;
   }
 
-  &__submit {
-    width: 100%;
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    padding: 0 224px;
+    margin-top: 117px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      width: 230px;
-    }
+.form__info-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    justify-self: end;
+  }
+}
+
+.form input::placeholder {
+  font-family: "Open Sans", "Courier", monospace;
+  font-size: 17px;
+  line-height: 18px;
+  opacity: 0.3;
+}
+
+.form__submit {
+  width: 100%;
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
+}
+
+.form__submit input {
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 16px;
   }
 }

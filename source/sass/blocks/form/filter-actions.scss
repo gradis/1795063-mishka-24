@@ -4,10 +4,22 @@
   border-radius: 50%;
   background-color: transparent;
   border: 2px solid $dark-gray;
-  top: 0;
-  left: -60px;
+  top: -4px;
+  left: -61px;
   width: 38px;
   height: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 48px;
+    height: 48px;
+    top: -8px;
+    left: -78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -7px;
+    left: -80px;
+  }
 }
 
 .filter-input-radio:hover + label::before {
@@ -16,10 +28,22 @@
   border-radius: 50%;
   background-color: transparent;
   border: 2px solid $main-color;
-  top: 0;
-  left: -60px;
+  top: -4px;
+  left: -61px;
   width: 38px;
   height: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 48px;
+    height: 48px;
+    top: -8px;
+    left: -78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -7px;
+    left: -80px;
+  }
 }
 
 .filter-input-radio:active + label::before {
@@ -29,10 +53,22 @@
   background-color: transparent;
   border: 2px solid $dark-gray;
   opacity: 0.2;
-  top: 0;
-  left: -60px;
+  top: -4px;
+  left: -61px;
   width: 38px;
   height: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 48px;
+    height: 48px;
+    top: -8px;
+    left: -78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -7px;
+    left: -80px;
+  }
 }
 
 .filter-input-radio:checked + label::before {
@@ -41,10 +77,22 @@
   border-radius: 50%;
   background-color: transparent;
   border: 2px solid $dark-gray;
-  top: 0;
-  left: -60px;
+  top: -4px;
+  left: -61px;
   width: 38px;
   height: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 48px;
+    height: 48px;
+    top: -8px;
+    left: -78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -7px;
+    left: -80px;
+  }
 }
 
 .filter-input-radio:checked:hover + label::before {
@@ -53,10 +101,22 @@
   border-radius: 50%;
   background-color: transparent;
   border: 2px solid $main-color;
-  top: 0;
-  left: -60px;
+  top: -4px;
+  left: -61px;
   width: 38px;
   height: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 48px;
+    height: 48px;
+    top: -8px;
+    left: -78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -7px;
+    left: -80px;
+  }
 }
 
 .filter-input-radio:checked:active + label::before {
@@ -66,10 +126,22 @@
   background-color: transparent;
   border: 2px solid $dark-gray;
   opacity: 0.2;
-  top: 0;
-  left: -60px;
+  top: -4px;
+  left: -61px;
   width: 38px;
   height: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 48px;
+    height: 48px;
+    top: -8px;
+    left: -78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -7px;
+    left: -80px;
+  }
 }
 
 
@@ -78,10 +150,22 @@
   position: absolute;
   border-radius: 50%;
   background-color: $main-color;
-  top: 12px;
+  top: 8px;
   left: -48px;
   width: 18px;
   height: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+    top: 6px;
+    left: -63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 7px;
+    left: -65px;
+  }
 }
 
 .filter-input-checkbox + label::before {
@@ -90,7 +174,19 @@
   height: 36px;
   border: 2px solid $dark-gray;
   position: absolute;
-  left: -60px;
+  left: -61px;
+  top: -6px;
+
+  @media (min-width: $tablet-width) {
+    width: 48px;
+    height: 48px;
+    left: -79px;
+    top: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -10px;
+  }
 }
 
 .filter-input-checkbox:hover + label::before {
@@ -99,7 +195,19 @@
   height: 36px;
   border: 2px solid $main-color;
   position: absolute;
-  left: -60px;
+  left: -61px;
+  top: -6px;
+
+  @media (min-width: $tablet-width) {
+    width: 48px;
+    height: 48px;
+    left: -79px;
+    top: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -10px;
+  }
 }
 
 .filter-input-checkbox:active + label::before {
@@ -109,7 +217,19 @@
   border: 2px solid $dark-gray;
   position: absolute;
   opacity: 0.2;
-  left: -60px;
+  left: -61px;
+  top: -6px;
+
+  @media (min-width: $tablet-width) {
+    width: 48px;
+    height: 48px;
+    left: -79px;
+    top: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -10px;
+  }
 }
 
 
@@ -119,7 +239,19 @@
   height: 36px;
   border: 2px solid $dark-gray;
   position: absolute;
-  left: -60px;
+  left: -61px;
+  top: -6px;
+
+  @media (min-width: $tablet-width) {
+    width: 48px;
+    height: 48px;
+    left: -79px;
+    top: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -10px;
+  }
 }
 
 .filter-input-checkbox:checked:hover + label::before {
@@ -128,7 +260,19 @@
   height: 36px;
   border: 2px solid $main-color;
   position: absolute;
-  left: -60px;
+  left: -61px;
+  top: -6px;
+
+  @media (min-width: $tablet-width) {
+    width: 48px;
+    height: 48px;
+    left: -79px;
+    top: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -10px;
+  }
 }
 
 .filter-input-checkbox:checked:active + label::before {
@@ -138,7 +282,19 @@
   border: 2px solid $dark-gray;
   opacity: 0.2;
   position: absolute;
-  left: -60px;
+  left: -61px;
+  top: -6px;
+
+  @media (min-width: $tablet-width) {
+    width: 48px;
+    height: 48px;
+    left: -79px;
+    top: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -10px;
+  }
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -149,4 +305,18 @@
   background-repeat: no-repeat;
   position: absolute;
   left: -53px;
+  top: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 32px;
+    height: 22px;
+    background-size: 100% auto;
+    left: -69px;
+    top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -70px;
+    top: 4px;
+  }
 }

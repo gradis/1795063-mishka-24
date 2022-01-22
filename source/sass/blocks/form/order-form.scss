@@ -1,4 +1,4 @@
-.order-form__item:nth-child(2n) {
+.order-form:nth-child(2n) {
   @media (min-width: $tablet-width) {
     background-color: $order-bg;
   }
@@ -9,26 +9,80 @@
   padding: 0;
   position: relative;
 
-  & label {
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 18px;
-  }
-
   @media (min-width: $tablet-width) {
     margin: 0;
     display: grid;
-    grid-template-columns: 167px 1fr;
+    grid-template-columns: 116px 1fr;
+    column-gap: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 0;
   }
 }
 
-.fieldset__type-of-order,
-.fieldset__color,
-.fieldset__full-name,
-.order-form--contact,
-.fieldset__comment {
+
+.order-form__fieldset label {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+
   @media (min-width: $tablet-width) {
-    padding: 50px 50px;
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+.fieldset__type-of-order {
+  @media (min-width: $tablet-width) {
+    padding: 43px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 41px 50px 50px 110px;
+  }
+}
+
+.fieldset__type-of-order > div,
+.fieldset__color > div {
+  padding-top: 6px;
+}
+
+.fieldset__color {
+  @media (min-width: $tablet-width) {
+    padding: 33px 50px
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 28px 200px 50px 110px;
+  }
+}
+
+.fieldset__full-name {
+  @media (min-width: $tablet-width) {
+    padding: 38px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 19px 228px 50px 110px;
+  }
+}
+
+.order-form--contact {
+  @media (min-width: $tablet-width) {
+    padding: 63px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 228px 50px 110px;
+  }
+}
+
+.fieldset__comment {
+  padding: 13px 50px;
+
+  @media (min-width: $desktop-width) {
+    padding: 26px 225px 50px 110px;
   }
 }
 
@@ -49,12 +103,17 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 
-.order-form input {
+.order-form input:not(.form__submit) {
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
 .order-form__legend span {
@@ -91,55 +150,62 @@
 .order-form__submit {
   margin-bottom: 55px;
 
-  & p {
-    margin-top: 17px;
-    margin-bottom: 0;
-
-    @media (min-width: $tablet-width) {
-      margin: 0;
-    }
-  }
-
-  & input {
-    margin-top: 30px;
-
-    @media (min-width: $tablet-width) {
-      margin: 0;
-      height: 52px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
-    margin: 0 50px 50px 50px;
+    margin: 42px 50px 45px 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-
-    & input {
-      grid-column: 1/2;
-      grid-row: 1/2;
-    }
-
-    & p {
-      grid-column: 2/3;
-      grid-row: 1/2;
-    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 217px;
+    margin: 0 225px 45px 225px;
   }
 }
 
-.fieldset__number input::placeholder {
+.order-form__submit p {
+  margin-top: 13px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+
+.order-form__submit input {
+  margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    height: 52px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+.fieldset__number input::placeholder,
+.fieldset__full-name input::placeholder,
+.fieldset__email input::placeholder {
   text-transform: uppercase;
   font-family: "Open Sans", "Courier", monospace;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+.fieldset__full-name input::placeholder,
+.fieldset__email input::placeholder {
+  text-transform: unset;
 }
 
 .fieldset__comment textarea {
   width: 100%;
   height: 142px;
-  margin-top: 23px;
+  margin-top: 17px;
   background: $white;
   mix-blend-mode: normal;
   border: 2px solid $dark-gray;
@@ -157,11 +223,18 @@
     font-size: 17px;
     line-height: 18px;
     opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+      line-height: 18px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     margin: 0;
     width: 100%;
+    font-size: 19px;
+    line-height: 18px;
   }
 
   &:hover {
