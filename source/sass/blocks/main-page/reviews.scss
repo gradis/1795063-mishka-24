@@ -42,6 +42,14 @@
     padding: 134px 50px 115px 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-image: url("../../../img/comments/review.jpg");
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/comments/review@2x.jpg");
+    background-size: 350px 457px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,6 +57,7 @@
     padding-top: 78px;
     padding-bottom: 174px;
     margin: 22px 0 0 50px;
+    background-position-y: 0;
   }
 }
 

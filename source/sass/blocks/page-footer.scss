@@ -26,6 +26,7 @@
 }
 
 .page-footer__list {
+  margin-top: 4px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -101,4 +102,9 @@
   cursor: pointer;
   fill: $main-dark-hover;
   opacity: 0.3;
+}
+
+.academy-link {
+  display: flex;
+  align-items: center;
 }

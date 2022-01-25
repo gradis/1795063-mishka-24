@@ -28,16 +28,16 @@
 }
 
 .text-input--margin {
-  margin: 0 0 24px 0;
+  margin: 0 0 0px 0;
 }
 
 .text-input--phone {
   position: absolute;
-  bottom: 48%;
+  bottom: 24%;
   right: 4px;
 
   @media (min-width: $tablet-width) {
-    bottom: 52%;
+    bottom: 25%;
     right: 26px;
   }
 
@@ -48,11 +48,11 @@
 
 .text-input--email {
   position: absolute;
-  bottom: 48%;
+  bottom: 20%;
   right: 0;
 
   @media (min-width: $tablet-width) {
-    bottom: 51%;
+    bottom: 30%;
     right: 22px;
   }
 

@@ -15,44 +15,8 @@
     height: 119px;
   }
 
-  & p {
-    margin: 0;
-    width: 30%;
-  }
-
-  & a {
-    width: 100%;
-    color: $white;
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
-
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 30px;
-    }
-  }
-
   &:last-child div {
     padding-right: 27px;
-  }
-
-  & div {
-    padding-top: 27px;
-    padding-left: 36px;
-    padding-right: 36px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  & svg {
-    opacity: 0.5;
-    margin-top: 3px;
-
-    @media (min-width: $desktop-width) {
-      margin-right: 10px;
-    }
   }
 
   &:first-child {
@@ -61,6 +25,46 @@
 
   &:last-child {
     background-color: $main-dark;
+  }
+}
+
+.goods-types-list__item p {
+  margin: 0;
+  width: 30%;
+}
+
+.goods-types-list__item a {
+  width: 100%;
+  color: $white;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.goods-types-list__item div {
+  padding-top: 25px;
+  padding-left: 30px;
+  padding-right: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 36px;
+    padding-right: 27px;
+  }
+}
+
+.goods-types-list__item svg {
+  opacity: 0.5;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 10px;
   }
 }
 
