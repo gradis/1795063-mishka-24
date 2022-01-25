@@ -35,22 +35,22 @@
 
 .fieldset__type-of-order {
   @media (min-width: $tablet-width) {
-    padding: 43px 50px;
+    padding: 50px 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 41px 50px 50px 110px;
+    padding: 48px 50px 50px 110px;
   }
 }
 
 .fieldset__type-of-order > div,
 .fieldset__color > div {
-  padding-top: 6px;
+  padding-top: 13px;
 }
 
 .fieldset__color {
   @media (min-width: $tablet-width) {
-    padding: 33px 50px;
+    padding: 26px 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,7 +60,7 @@
 
 .fieldset__full-name {
   @media (min-width: $tablet-width) {
-    padding: 38px 50px;
+    padding: 46px 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -68,18 +68,30 @@
   }
 }
 
+.fieldset__number {
+  margin-bottom: 29px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
+}
+
 .order-form--contact {
   @media (min-width: $tablet-width) {
-    padding: 63px 50px;
+    padding: 50px 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 50px 228px 50px 110px;
+    padding: 50px 228px 74px 110px;
   }
 }
 
 .fieldset__comment {
-  padding: 13px 50px;
+  padding: 32px 0px 0 0px;
+
+  @media (min-width: $tablet-width) {
+    padding: 49px 50px 11px 50px;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 26px 225px 50px 110px;
@@ -102,6 +114,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 18px;
     display: flex;
     justify-content: flex-start;
   }
@@ -148,7 +161,7 @@
 }
 
 .order-form__submit {
-  margin-bottom: 55px;
+  margin-bottom: 57px;
 
   @media (min-width: $tablet-width) {
     margin: 42px 50px 45px 50px;

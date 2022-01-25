@@ -84,7 +84,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 26px 0 0 0;
+    margin: 33px 0 0 0;
     padding-bottom: 84px;
     grid-template-columns: min-content 1fr;
     grid-template-rows: min-content min-content;
@@ -94,13 +94,13 @@
 }
 
 .adress-block__name {
-  @media (max-width: $tablet-width) {
+  @media (max-width: ($tablet-width - 1)) {
     padding-left: 30px;
   }
 }
 
 .adress-block__place {
-  @media (max-width: $tablet-width) {
+  @media (max-width: ($tablet-width - 1)) {
     padding-left: 7px;
   }
 }
@@ -119,9 +119,6 @@
     padding: 0;
     grid-column: 3/4;
     grid-row: 1/4;
-    // position: absolute;
-    // top: -100%;
-    // right: -100%;
   }
 }
 
