@@ -4,18 +4,19 @@
   column-gap: 7px;
   margin-bottom: 31px;
   justify-items: center;
+}
 
-  &__item {
-    box-sizing: border-box;
-    width: 82px;
-    height: 52px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.size-list__item {
+  box-sizing: border-box;
+  width: 82px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    @media (min-width: $tablet-width) {
-      width: 112px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 112px;
+    // margin-top: 8px;
   }
 }
 

@@ -6,23 +6,6 @@
   }
 
   position: relative;
-
-  &::before {
-    @media (min-width: $tablet-width) {
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 24px;
-      background-image: url("../../../img/shapes/zigzag.svg");
-      bottom: -12px;
-      z-index: 2;
-    }
-
-    @media (min-width: $tablet-width) {
-      height: 34px;
-      bottom: -18px;
-    }
-  }
 }
 
 .goods-types-list__item {
@@ -43,6 +26,11 @@
     font-weight: bold;
     font-size: 19px;
     line-height: 24px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   &:last-child div {
@@ -50,8 +38,8 @@
   }
 
   & div {
-    padding-top: 24px;
-    padding-left: 30px;
+    padding-top: 27px;
+    padding-left: 36px;
     padding-right: 36px;
     display: flex;
     justify-content: space-between;
@@ -60,6 +48,11 @@
 
   & svg {
     opacity: 0.5;
+    margin-top: 3px;
+
+    @media (min-width: $desktop-width) {
+      margin-right: 10px;
+    }
   }
 
   &:first-child {

@@ -6,16 +6,12 @@
   font-style: normal;
   margin: 0 auto;
   min-width: 320px;
+}
 
-  @media (min-width: $desktop-width) {
-    width: 1150px;
-  }
-
-  &__body {
-    padding: 0;
-    margin: 0;
-    position: relative;
-  }
+.page__body {
+  padding: 0;
+  margin: 0;
+  position: relative;
 }
 
 .page-header {
