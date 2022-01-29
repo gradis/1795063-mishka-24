@@ -15,9 +15,6 @@
     height: 119px;
   }
 
-  &:last-child div {
-    padding-right: 27px;
-  }
 
   &:first-child {
     background-color: $main-color;
@@ -59,14 +56,14 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 36px;
-    padding-right: 27px;
+    padding-right: 34px;
   }
 }
 
 .goods-types-list__item svg {
   opacity: 0.5;
 
-  @media (min-width: $desktop-width) {
-    margin-right: 10px;
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
   }
 }
