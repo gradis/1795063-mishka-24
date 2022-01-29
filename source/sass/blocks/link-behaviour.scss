@@ -1,0 +1,10 @@
+.link-behaviour:hover path {
+  cursor: pointer;
+  fill: $main-dark-hover;
+}
+
+.link-behaviour:active path {
+  cursor: pointer;
+  fill: $main-dark-hover;
+  opacity: 0.3;
+}

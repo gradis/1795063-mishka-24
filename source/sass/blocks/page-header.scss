@@ -11,6 +11,7 @@
     background-color: $arrow-border-color;
     position: absolute;
     bottom: -1px;
+    z-index: 2;
   }
 }
 
@@ -47,7 +48,7 @@
   line-height: 24px;
 }
 
-.page-header__nav-toggle {
+.page-header__toggle {
   font-size: 0;
   padding: 0;
 
@@ -56,9 +57,7 @@
   }
 }
 
-//Верстал по памяти, может быть неправильно
-
-.toggle--closed {
+.page-header__toggle--closed {
   font-size: 0;
   position: absolute;
   top: 0;
@@ -72,7 +71,7 @@
   padding: 0 31px;
 }
 
-.toggle--closed::before {
+.page-header__toggle--closed::before {
   content: "";
   position: absolute;
   top: 32px;
@@ -83,7 +82,7 @@
   box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
 }
 
-.toggle--opened {
+.page-header__toggle--opened {
   background-image: url("../../img/menu/menu-close.svg");
   background-position: center;
   position: absolute;
@@ -96,4 +95,24 @@
   border: 0;
   cursor: pointer;
   background-repeat: no-repeat;
+}
+
+.page-header__toggle--hidden {
+  display: none;
+}
+
+.page-header__nav {
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 1px 0 $table-color, inset 0 1px 0 $table-color;
+
+  &--hidden {
+    @media (max-width: ($tablet-width - 1)) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 88px;
+  }
 }

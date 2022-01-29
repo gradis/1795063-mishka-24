@@ -11,3 +11,29 @@
   margin-top: 14px;
   margin-bottom: 22px;
 }
+
+.modal-form__button-submit {
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.4;
+    cursor: pointer;
+  }
+}
+
+.modal-form__button + label {
+  cursor: pointer;
+  border: 2px solid rgba($color: $dark-gray, $alpha: 0.1);
+}
+
+.modal-form__button:hover + label {
+  border: 2px solid rgba($color: $dark-gray, $alpha: 0.3);
+  cursor: pointer;
+}
+
+.modal-form__button:checked + label {
+  border: 2px solid $main-color;
+}

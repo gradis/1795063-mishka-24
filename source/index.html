@@ -15,12 +15,12 @@
           <a class="page-header__logo" href="/index.html">
             <img class="page-header__logo-img" src="/img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин милых штук ручной работы для дома «Мишка»">
           </a>
-          <button class="page-header__nav-toggle toggle--closed" type="button"> <!--toggle-closed - кнопка при закрытом меню, toggle-opened - для откртого состояние-->
+          <button class="page-header__toggle page-header__toggle--closed page-header__toggle--hidden" type="button"> <!--toggle-closed - кнопка при закрытом меню, toggle-opened - для откртого состояние-->
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
-        <nav class="page-header__list main-nav"> <!--main-nav--hidden скрывает меню в мобильной версии-->
-          <ul class="main-nav__list main-nav--nojs style-list-none">
+        <nav class="page-header__nav"> <!--page-header__nav--hidden скрывает меню в мобильной версии-->
+          <ul class="main-nav main-nav--nojs style-list-none">
             <li class="main-nav__item main-nav__item--logo-tablet main-nav__item--mobile-none">
               <a class="main-nav__logo" href="/index.html">
                 <picture>
@@ -29,29 +29,29 @@
                 </picture>
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--catalog  site-list__item">
+            <li class="main-nav__item main-nav__item--catalog">
               <a href="/catalog.html">
                 <div class="main-nav__img-wrapper"></div>
                 <p>Каталог товаров</p>
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--form site-list__item">
+            <li class="main-nav__item main-nav__item--form">
               <a href="/form.html">
                 <div class="main-nav__img-wrapper"></div>
                 <p>Вязание на заказ</p>
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--search site-list__item">
-              <a class="main-nav__item--text-none" href="#">
+            <li class="main-nav__item main-nav__item--search">
+              <a class="" href="#">
                 <div class="main-nav__img-wrapper">
                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.2" d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z" fill="black"/>
                   </svg>
                 </div>
-                <p class="main-nav__item--text-none">Поиск по сайту</p>
+                <p class="main-nav__text main-nav__text--text-none">Поиск по сайту</p>
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--bukkit site-list__item">
+            <li class="main-nav__item main-nav__item--bukkit">
               <a href="#">
                 <div class="main-nav__img-wrapper">
                   <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,17 +61,17 @@
                 <p>Корзина: <span class="bukkit-value">пока пуста</span></p>
               </a>
             </li>
-            <li class="main-nav__item site-list__item main-nav__item--new main-nav__item--mobile-none main-nav__item--tablet-none main-nav__item--second-row">
+            <li class="main-nav__item main-nav__item--new main-nav__item--mobile-none main-nav__item--tablet-none main-nav__item--second-row">
               <a href="#">
                 <p>Новые поступления</p>
               </a>
             </li>
-            <li class="main-nav__item site-list__item main-nav__item--sale main-nav__item--mobile-none main-nav__item--tablet-none  main-nav__item--second-row">
+            <li class="main-nav__item main-nav__item--sale main-nav__item--mobile-none main-nav__item--tablet-none  main-nav__item--second-row">
               <a href="#">
                 <p>Распродажа</p>
               </a>
             </li>
-            <li class="main-nav__item--ad main-nav__item--mobile-none">
+            <li class="main-nav__item main-nav__item--ad main-nav__item--mobile-none">
               <p class="page-header__info">Бесплатная доставка по России</p>
             </li>
           </ul>
@@ -84,9 +84,9 @@
       <section class="banner">
         <div class="banner__container container">
           <h2 class="visually-hidden">Баннер</h2>
-          <h3 class="banner__text--special">Милые штуки ручной<br> работы для дома</h3>
+          <h3 class="banner__text">Милые штуки ручной<br> работы для дома</h3>
           <ul class="banner__list goods-types-list style-list-none">
-            <li class="goods-types-list__item green_button--left">
+            <li class="goods-types-list__item button button_type button_type--left">
               <a href="">
                 <div>
                   <p>Предметы интерьера</p>
@@ -102,7 +102,7 @@
                 </div>
               </a>
             </li>
-            <li class="goods-types-list__item green_button--right">
+            <li class="goods-types-list__item button button_type button_type--right">
               <a href="">
                 <div>
                   <p>Детские игрушки</p>
@@ -129,21 +129,21 @@
           <table class="promote-item__table item-details">
             <tr>
               <td>Цвет:</td>
-              <td class="item-details__row--second-row">тиффани/серый</td>
+              <td class="item-details__row item-details__row--second-row">тиффани/серый</td>
             </tr>
             <tr>
               <td>Диаметр:</td>
-              <td class="item-details__row--second-row">25 см</td>
+              <td class="item-details__row item-details__row--second-row">25 см</td>
             </tr>
             <tr>
               <td>Высота:</td>
-              <td class="item-details__row--second-row">15 см</td>
+              <td class="item-details__row item-details__row--second-row">15 см</td>
             </tr>
           </table>
           <img class="promote-item__image" src="/img/featured/item.jpg"  srcset="/img/featured/item.jpg 1x, /img/featured/item@2x.jpg 2x" width="260" height="315" alt="Фотография товара">
           <div class="promote-item__bottom-wrapper">
-            <p class="promote-item__price">Цена: <span class="featured__price-value">990</span> руб.</p>
-            <a class="promote-item__button button__black">Заказать</a>
+            <p class="promote-item__price">Цена: <span class="promote-item__price-value">990</span> руб.</p>
+            <a class="promote-item__button button button--black">Заказать</a>
           </div>
         </div>
       </section>
@@ -154,27 +154,27 @@
             <h2 class="section-name">Коротко о нас:</h2>
             <ul class="about__list features-list style-list-none">
               <li class="features-list__item features-list__item--one">
-                <img class="img--mobile-none" width="33" height="38" src="/img/about/icon-1.svg" alt="Экологические материалы">
+                <img class="item-img item-img--mobile-none" width="33" height="38" src="/img/about/icon-1.svg" alt="Экологические материалы">
                 <p>Экологически<br>чистые материалы</p>
               </li>
               <li class="features-list__item features-list__item--two">
-                <img class="img--mobile-none" src="/img/about/icon-3.svg" width="47" height="27" alt="Цена">
+                <img class="item-img item-img--mobile-none" src="/img/about/icon-3.svg" width="47" height="27" alt="Цена">
                 <p>Скандинавский стиль<br>по российской цене</p>
               </li>
               <li class="features-list__item features-list__item--three">
-                <img class="img--mobile-none" src="/img/about/icon-5.svg" width="34" height="27" alt="Лайк">
+                <img class="item-img item-img--mobile-none" src="/img/about/icon-5.svg" width="34" height="27" alt="Лайк">
                 <p>Увеличивает лайки<br>на фотографиях</p>
               </li>
               <li class="features-list__item features-list__item--four">
-                <img class="img--mobile-none" src="/img/about/icon-2.svg" width="35" height="34" alt="Клубок ниток">
+                <img class="item-img item-img--mobile-none" src="/img/about/icon-2.svg" width="35" height="34" alt="Клубок ниток">
                 <p>Связано вручную<br>с любовью и умилением</p>
               </li>
               <li class="features-list__item features-list__item--five">
-                <img class="img--mobile-none" src="/img/about/icon-4.svg" width="55" height="23" alt="Ракета">
+                <img class="item-img item-img--mobile-none" src="/img/about/icon-4.svg" width="55" height="23" alt="Ракета">
                 <p>Поддержка отечественного производителя</p>
               </li>
               <li class="features-list__item features-list__item--six">
-                <img class="img--mobile-none" src="/img/about/icon-6.svg" width="33" height="32" alt="Подарок">
+                <img class="item-img item-img--mobile-none" src="/img/about/icon-6.svg" width="33" height="32" alt="Подарок">
                 <p>Поставляется<br>в подарочной упаковке</p>
               </li>
             </ul>
@@ -199,8 +199,7 @@
               <button class="arrow-button arrow-buttons__left"></button>
               <button class="arrow-button arrow-buttons__right"></button>
             </div>
-            <a class="reviews__button button__black">Написать</a>
-            <!-- <img src="img/comments/review.jpg" srcset="img/comments/review.jpg 1x, img/comments/review@2x.jpg 2x" alt="Задний фон отзыв" class="reviews__img" width="350" height="457"> у меня тут вопросы по стилям. правильно ли я сделал? -->
+            <a class="reviews__button button button--black">Написать</a>
           </div>
         </div>
       </section>
@@ -212,13 +211,13 @@
             <path d="M7.76611 3.86183V42.3812L47 23.072L7.76611 3.86183ZM0 80.9005V0H3.83261V80.9005H0Z" fill="#63D1BB"/>
             <path d="M3.83262 0.0996094H0V81.0001H3.83262V0.0996094Z" fill="#231F20"/>
           </svg>
-          <div class="contacts__wrapper">
-            <p class="email-block__name contacts--mobile-only">e&#8209;mail:</p>
-            <p class="email-block__link">
+          <div class="contacts-wrapper">
+            <p class="contacts-wrapper__email-name">e&#8209;mail:</p>
+            <p class="contacts-wrapper__email-link">
               <a href="mailto:info@mimimishkashop.ru">info&#64;mimimishkashop.ru</a>
             </p>
-            <p class="adress-block__name">адрес:</p>
-            <p class="adress-block__place">
+            <p class="contacts-wrapper__adress-name">адрес:</p>
+            <p class="contacts-wrapper__adress-place">
               г. Санкт-Петербург
               <br>ул. Большая Конюшенная
               <br>д. 19/8, офис 101
@@ -230,14 +229,14 @@
             <iframe class="contacts__map" src="https://yandex.by/map-widget/v1/-/CCUyQNWscA" width="320" height="454" frameborder="1" allowfullscreen="true" style="position:relative;">
             </iframe>
           </div>
-          <a class="contacts__button button__black">Напишите нам</a>
+          <a class="contacts__button button button--black">Напишите нам</a>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__container">
-        <a class="page-footer__logo-link--mobile-hidden" href="#">
+        <a class="page-footer__logo-link page-footer__logo-link--mobile-hidden" href="#">
           <svg class="page-footer__logo link-behaviour" width="102" height="34" viewBox="0 0 102 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M19.2204 21.3813C19.1204 18.6962 18.7204 16.1105 18.7204 13.4255C18.7204 11.2376 19.1204 9.04976 18.3204 6.96135C18.3204 6.76246 18.4204 6.46411 18.4204 6.26522C18.6204 5.27074 15.1204 5.76798 14.6204 6.76246C14.3204 7.0608 14.1204 7.35914 14.2204 7.75694C14.2204 7.85638 14.3204 7.95583 14.3204 8.05528C13.6204 11.2376 12.7204 14.3205 11.7204 17.4034C11.3204 18.5967 10.8204 19.6907 10.4204 20.884C9.82041 19.7901 9.22041 18.6962 8.82041 17.5028C7.42041 14.1216 6.22041 10.6409 4.52041 7.35914C4.72041 5.86743 1.32041 5.96688 0.620408 7.35914C-0.179592 9.04976 -0.0795918 10.7404 0.220408 12.5304C0.520408 14.5194 0.620408 16.5083 0.620408 18.5967C0.620408 22.5746 1.02041 26.4531 1.02041 30.431C0.620408 30.8288 0.520408 31.326 0.920408 31.8233C1.12041 32.0222 1.32041 32.2211 1.52041 32.3205C2.52041 33.0167 5.12041 32.42 5.12041 31.0277C5.12041 26.9503 4.82041 22.873 4.72041 18.6962C4.72041 18.2984 4.72041 17.9006 4.72041 17.5028C4.82041 17.6023 4.82041 17.8012 4.92041 17.9006C5.52041 19.4918 6.22041 21.0829 7.12041 22.5746C8.02041 24.0664 8.42041 25.6575 8.92041 27.2487C8.72041 27.4476 8.62041 27.7459 8.72041 27.9448C8.72041 28.1437 8.82041 28.2432 9.02041 28.3426C9.62041 28.8399 10.8204 28.641 11.5204 28.3426C11.8204 28.2432 12.1204 28.0443 12.3204 27.9448C12.6204 27.7459 13.2204 27.2487 13.0204 26.7514C13.0204 26.652 12.9204 26.5526 12.9204 26.4531C13.4204 25.1603 13.6204 23.8675 13.9204 22.5746C14.2204 21.1824 14.7204 19.7901 15.2204 18.4973C15.3204 19.094 15.3204 19.6907 15.4204 20.3868C15.6204 22.9724 15.4204 25.4586 15.4204 27.9448C15.4204 28.7404 15.5204 29.536 15.6204 30.431C15.7204 30.7294 16.0204 32.2211 15.9204 32.3205C15.1204 32.8178 15.3204 33.4144 16.1204 33.6133C17.0204 33.8122 18.2204 33.5139 18.9204 32.9172C20.1204 31.8233 19.5204 30.1327 19.3204 28.7404C18.8204 26.3537 19.3204 23.768 19.2204 21.3813Z" fill="black"/>
             <path d="M27.6201 22.0776C27.5201 20.0887 26.8201 18.1992 26.8201 16.2102C26.8201 13.9229 27.0201 11.6356 26.6201 9.34833C26.5201 8.65219 22.5201 9.44778 22.7201 10.3428C23.0201 12.4312 22.9201 14.5196 22.9201 16.7075C22.9201 18.6964 23.4201 20.5859 23.6201 22.5749C23.9201 24.6633 23.5201 26.7517 23.7201 28.7406C23.8201 29.7351 24.5201 31.4257 23.8201 32.3208C23.4201 32.818 25.3201 32.6191 25.4201 32.6191C26.2201 32.5196 27.2201 32.2213 27.7201 31.6246C28.4201 30.829 27.9201 29.2379 27.8201 28.2434C27.5201 26.2544 27.7201 24.0666 27.6201 22.0776Z" fill="black"/>
@@ -305,11 +304,11 @@
               <label for="size_L">L</label>
             </li>
           </ul>
-          <input class="modal-form__button-submit button__green" type="submit" value="Добавить">
+          <input class="modal-form__button-submit button button--green" type="submit" value="Добавить">
         </form>
       </div>
     </section>
 
-    <script src="js/main.js" type="module"></script>
+    <script src="js/script.js" type="module"></script>
   </body>
 </html>
