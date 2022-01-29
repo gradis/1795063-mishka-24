@@ -31,7 +31,7 @@
   margin: 0 0 0 0;
 }
 
-.text-input--phone {
+.text-input-phone {
   position: absolute;
   bottom: 24%;
   right: 4px;
@@ -46,7 +46,7 @@
   }
 }
 
-.text-input--email {
+.text-input-email {
   position: absolute;
   bottom: 20%;
   right: 0;
@@ -61,30 +61,30 @@
   }
 }
 
-.text-input + .text-input--phone path {
+.text-input + .text-input-phone path {
   opacity: 0.2;
 }
 
-.text-input:hover + .text-input--phone path {
+.text-input:hover + .text-input-phone path {
   fill: $main-color;
   opacity: 1;
 }
 
-.text-input:active + .text-input--phone path {
+.text-input:active + .text-input-phone path {
   fill: $main-color;
   opacity: 1;
 }
 
-.text-input + .text-input--email path {
+.text-input + .text-input-email path {
   opacity: 0.2;
 }
 
-.text-input:hover + .text-input--email path {
+.text-input:hover + .text-input-email path {
   fill: $main-color;
   opacity: 1;
 }
 
-.text-input:active + .text-input--email path {
+.text-input:active + .text-input-email path {
   fill: $main-color;
   opacity: 1;
 }

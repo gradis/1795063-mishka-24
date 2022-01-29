@@ -1,26 +1,41 @@
-.button__black {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.button {
+  &--black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  background-color: $white;
-  color: $dark-gray;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  height: 48px;
-  border: 2px solid $dark-gray;
-}
+    background-color: $white;
+    color: $dark-gray;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 48px;
+    border: 2px solid $dark-gray;
 
-.button__black:hover {
-  background-color: $dark-gray;
-  color: $white;
-}
+    &:hover {
+      background-color: $dark-gray;
+      color: $white;
+    }
 
-.button__black:active {
-  background-color: $dark-gray;
-  color: rgba(255, 255, 255, 0.3);
+    &:active {
+      background-color: $dark-gray;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--green {
+    width: 260px;
+    height: 52px;
+
+    color: $white;
+    text-transform: uppercase;
+    border: none;
+    background-color: $main-color;
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: bold;
+  }
 }
 
 .arrow-button {
@@ -86,15 +101,52 @@
   }
 }
 
-.button__green {
-  width: 260px;
-  height: 52px;
+.button_type {
+  &--left {
+    &:hover {
+      transform: translateY(-5px);
+      background-color: $main-color-hover;
+    }
 
-  color: $white;
-  text-transform: uppercase;
-  border: none;
-  background-color: $main-color;
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: bold;
+    &:hover svg {
+      opacity: 0.7;
+    }
+
+    &:active svg {
+      opacity: 0.3;
+    }
+
+    &:hover::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      bottom: -5px;
+      background-color: $main-color-hover;
+    }
+  }
+
+  &--right {
+    &:hover {
+      transform: translateY(-5px);
+      background-color: $main-dark-hover;
+    }
+
+    &:hover svg {
+      opacity: 0.7;
+    }
+
+    &:active svg {
+      opacity: 0.3;
+    }
+
+    &:hover::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      bottom: -5px;
+      background-color: $main-dark-hover;
+    }
+  }
 }

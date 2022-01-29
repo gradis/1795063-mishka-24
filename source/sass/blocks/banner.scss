@@ -22,7 +22,7 @@
     }
   }
 
-  &--inner {
+  &-inner {
     background-color: $footer-color;
     height: 177px;
 
@@ -81,7 +81,7 @@
   }
 }
 
-.banner__text {
+.banner-inner__text {
   padding: 74px 30px 0 30px;
   margin: 0;
   font-weight: bold;
@@ -102,7 +102,7 @@
   }
 }
 
-.banner__text--special {
+.banner__text {
   margin: 0;
   text-align: center;
   padding: 73px 30px 0 30px;

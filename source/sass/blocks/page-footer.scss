@@ -92,19 +92,3 @@
 .page-footer__wrapper p {
   margin-right: 27px;
 }
-
-.link-behaviour:hover path {
-  cursor: pointer;
-  fill: $main-dark-hover;
-}
-
-.link-behaviour:active path {
-  cursor: pointer;
-  fill: $main-dark-hover;
-  opacity: 0.3;
-}
-
-.academy-link {
-  display: flex;
-  align-items: center;
-}

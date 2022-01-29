@@ -9,13 +9,15 @@
 
 @import "blocks/page.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/academy-link.scss";
+@import "blocks/link-behaviour.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/user-list.scss";
 @import "blocks/banner.scss";
 @import "blocks/modal.scss";
-@import "blocks/modal-form.scss";
 @import "blocks/size-list.scss";
+@import "blocks/modal-form.scss";
 
 // main-page
 @import "blocks/main-page/promote-item.scss";
@@ -23,18 +25,20 @@
 @import "blocks/main-page/goods-types-list.scss";
 @import "blocks/main-page/features-list.scss";
 @import "blocks/main-page/reviews.scss";
+@import "blocks/main-page/user-info.scss";
 @import "blocks/main-page/contacts.scss";
-@import "blocks/main-page/email-block.scss";
 
 // form
 @import "blocks/form/form.scss";
 @import "blocks/form/selection-list.scss";
 @import "blocks/form/order-form.scss";
 @import "blocks/form/text-input.scss";
+@import "blocks/form/fullname-list.scss";
 @import "blocks/form/filter-actions.scss";
 
 //catalog
 @import "blocks/catalog/catalog.scss";
+@import "blocks/catalog/product.scss";
 @import "blocks/catalog/process-info.scss";
 @import "global/container.scss";
 

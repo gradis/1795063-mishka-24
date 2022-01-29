@@ -26,28 +26,6 @@
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
-
-  &--full-name li {
-    margin: 23px 0 0 0;
-    display: grid;
-    grid-template-rows: min-content 1fr;
-
-    @media (min-width: $tablet-width) {
-      margin: 0 0 24px 0;
-      column-gap: 26px;
-      grid-template-rows: none;
-      grid-template-columns: min-content 1fr;
-      align-items: center;
-    }
-  }
-
-  &--full-name li:last-child {
-    margin-bottom: 30px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 0;
-    }
-  }
 }
 
 .selection-list label {
