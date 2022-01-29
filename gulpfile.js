@@ -15,7 +15,7 @@ import browser from 'browser-sync';
 
 // Styles
 
-export const styles = () => {
+const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
@@ -28,15 +28,14 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
-
-// HTML
+//HTML
 
 const html = () => {
   return gulp.src('source/*.html')
     .pipe(gulp.dest('build'));
 }
 
-// Scripts
+//Scripts
 
 const scripts = () => {
   return gulp.src('source/js/script.js')
@@ -44,7 +43,7 @@ const scripts = () => {
     .pipe(browser.stream());
 }
 
-// Images
+//Imgs
 
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
@@ -57,7 +56,7 @@ const copyImages = () => {
     .pipe(gulp.dest('build/img'))
 }
 
-// WebP
+//WebP
 
 const createWebp = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
@@ -67,7 +66,7 @@ const createWebp = () => {
     .pipe(gulp.dest('build/img'))
 }
 
-// SVG
+//SVG
 
 const svg = () =>
   gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
@@ -84,7 +83,7 @@ const sprite = () => {
     .pipe(gulp.dest('build/img'));
 }
 
-// Copy
+//Copy
 
 const copy = (done) => {
   gulp.src([
@@ -97,7 +96,6 @@ const copy = (done) => {
   done();
 }
 
-
 // Clean
 
 const clean = () => {
@@ -109,7 +107,7 @@ const clean = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'build'
+      baseDir: 'source'
     },
     cors: true,
     notify: false,
@@ -130,10 +128,9 @@ const reload = (done) => {
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts));
-  gulp.watch('source/*.html', gulp.series(html, reload));
+  gulp.watch('source/*.html').on('change', browser.reload);
 }
 
-// Build
 
 export const build = gulp.series(
   clean,
