@@ -89,6 +89,7 @@
 .product__name:hover {
   opacity: 0.6;
 }
+
 .product__name:active {
   opacity: 0.3;
 }
@@ -152,6 +153,7 @@
   opacity: 1;
   fill: $main-color;
 }
+
 .product__buy-icon:hover {
   cursor: pointer;
 }
