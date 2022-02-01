@@ -1,5 +1,5 @@
-const button = document.querySelector(".page-header__toggle");
-const navToggle = document.querySelector(".page-header__nav");
+const button = document.querySelector('.page-header__toggle');
+const navToggle = document.querySelector('.page-header__nav');
 
 button.classList.remove('page-header__toggle--hidden')
 document.querySelector('.main-nav').classList.remove('main-nav--nojs');
