@@ -96,6 +96,7 @@
     @media (min-width: $tablet-width) {
       white-space: nowrap;
       max-height: max-content;
+      height: min-content;
       position: absolute;
       left: 50px;
       top: 22px;

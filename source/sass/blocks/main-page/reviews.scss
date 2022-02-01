@@ -47,7 +47,9 @@
     background-position-y: 50px;
   }
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: 2dppx) and (min-width: $tablet-width) {
+    background-position-y: 50px;
+    background-repeat: no-repeat;
     background-image: url("../../img/comments/review@2x.jpg");
     background-size: 350px 457px;
   }

@@ -210,6 +210,30 @@
   }
 }
 
+.filter-input-checkbox:hover + label::after {
+  content: "";
+  width: 23px;
+  height: 16px;
+  background-image: url("../../../img/Tick.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -53px;
+  top: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 32px;
+    height: 22px;
+    background-size: 100% auto;
+    left: -69px;
+    top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -70px;
+    top: 4px;
+  }
+}
+
 .filter-input-checkbox:active + label::before {
   content: "";
   width: 36px;
@@ -301,7 +325,7 @@
   content: "";
   width: 23px;
   height: 16px;
-  background-image: url("../../../img/form/Checkbox/Tick.svg");
+  background-image: url("../../../img/Tick.svg");
   background-repeat: no-repeat;
   position: absolute;
   left: -53px;
