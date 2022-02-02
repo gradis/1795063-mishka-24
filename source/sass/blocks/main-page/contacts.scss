@@ -134,6 +134,11 @@
   }
 }
 
+.contacts__map-wrapper--hidden a,
+.contacts__map-wrapper--hidden iframe {
+  display: none;
+}
+
 .contacts__map {
   width: 100%;
   border: none;
