@@ -146,10 +146,6 @@
   min-height: 454px;
   height: 100%;
 
-  &--hidden {
-    display: none;
-  }
-
   @media (min-width: $desktop-width) {
     width: 527px;
     height: 457px;
