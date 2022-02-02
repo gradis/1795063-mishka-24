@@ -50,8 +50,11 @@
 }
 
 .order-form__legend {
+  color: $main-color;
+  text-transform: uppercase;
   margin: 0;
   position: relative;
+  font-weight: bold;
 
   @media (min-width: $tablet-width) {
     padding-top: 14px;
@@ -62,6 +65,16 @@
     padding-top: 18px;
     display: flex;
     justify-content: flex-start;
+  }
+}
+
+.order-form__legend > span {
+  background-color: $white;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    background-color: transparent;
   }
 }
 

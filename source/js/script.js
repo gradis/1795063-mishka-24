@@ -1,8 +1,10 @@
 const button = document.querySelector('.page-header__toggle');
 const navToggle = document.querySelector('.page-header__nav');
+const mapWrapper = document.querySelector('.contacts__map-wrapper')
 
 button.classList.remove('page-header__toggle--hidden')
 document.querySelector('.main-nav').classList.remove('main-nav--nojs');
+mapWrapper.classList.remove('contacts__map-wrapper--hidden');
 navToggle.classList.add('page-header__nav--hidden');
 
 button.addEventListener('click', () => {
